@@ -53,7 +53,7 @@
 				<artifactId>git-commit-id-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>devops-integration</finalName>
+		<finalName>order-service</finalName>
 	</build>
 
 </project>
