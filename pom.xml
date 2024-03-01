@@ -30,16 +30,23 @@
 	</dependencies>
 
 	<build>
-		<plugins>
-			
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-compiler-plugin</artifactId>
-    <configuration>
-        <source>1.8</source>
-        <target>1.8</target>
-    </configuration>
-</plugin>
-		</plugins>
+	   <pluginManagement>
+        <plugins>
+            <plugin>
+            <groupId> ----- </groupId>
+            <artifactId>maven-jar-plugin</artifactId> (check your plugin ) 
+            <version>3.0.2</version>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <addClasspath>true</addClasspath>
+                        <mainClass> ------ </mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+            </plugin>
+        </plugins>
+        </pluginManagement>
 	</build>
 
 </project>
